@@ -61,7 +61,7 @@ html, body {
 }
 
 .txt_inicio{
-    font-family: "proxima-nova", sans-serif;
+    font-family: "proxima-nova", "Manrope", sans-serif;
     font-weight: 700;
     font-style: bold;
     font-size: 30px;
@@ -186,13 +186,14 @@ header{
 
 
 /*DESCRIPCION CARRUSEL*/
+
 .tit-descripcion-info {
     background-color: #a4ff00; 
     border: solid 3px black;
     color: #000; 
-    font-family: "snug-sharp-variable", sans-serif;
+    font-family: "snug-sharp-variable", "Manrope", sans-serif;
     text-align: center;
-    font-variation-settings: "XHGT" 1, "wdth" 100, "wght" 300;
+   
     font-size: 35px;
     font-weight: bold;
     padding-top: 5px;
@@ -200,6 +201,8 @@ header{
       
 
 }
+
+
 
 .descripcion-info {
     
