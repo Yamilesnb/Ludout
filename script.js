@@ -128,3 +128,27 @@ var swiper = new Swiper(".slide-content-ayuda",{
       
     },
 });
+
+
+ // function cambiarLogo() {
+   // const logoInsta = document.getElementById("logoInsta");
+    //logoInsta.src = "Fondos/logoInsta.png";
+  //}
+
+
+  const imagenes = [
+    "Fondos/logoPerfil.png",        // tu logo original
+    "Fondos/logoInsta.png"    // logo de Instagram
+  ];
+
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % imagenes.length;
+    document.getElementById("logoInsta").src = imagenes[index];
+  }, 2000); // Cambia cada 2000 ms (2 segundos)
+
+     function toggleMenu() {
+      document.getElementById('menu').classList.toggle('active');
+      document.getElementById('overlay').classList.toggle('active');
+    }

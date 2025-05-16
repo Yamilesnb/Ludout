@@ -28,7 +28,25 @@
   <body>
 
     
+  <!-- Botón de menú -->
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
+  <!-- Fondo oscuro -->
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Menú desplegable -->
+  <div class="menu" id="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#titulo-informacion">¿Sabias qué?</a>
+    <a href="#logo_docu">Ecos de culpa</a>
+    <a href="#centros">Ayuda</a>
+    <a href="#grafica">Gráfica Interactiva</a>
+    <a href="#titulo-podcast">Voces de Juego</a>
+    <a href="#entrevistas">Entrevistas</a>
+    <a href="#quienes-somos">Sobre Nosotros</a>
+    <a href="#instagram">Instagram</a>
+    <a href="backstage.html">Backstage</a>
+  </div>
 <!--  ============================== INICIO ==============================  -->
 
     <section id="inicio" >
@@ -544,7 +562,7 @@
     
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 txt_entrevistas">
       <h3 class="subt_entrevistas">No solo podés escuchar la verdad. </h3>
-      <h2 class="subt_entrevistas_dos"> CONOCÉ EL ROSTRO DE QUIÉN LA CUENTA.</h2>
+      <h2 class="subt_entrevistas_dos"> CONOCÉ A LOS PROFESIONALES.</h2>
       </div>  
       
       <!-- Carrusel -->
@@ -653,7 +671,7 @@
  
     <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 foto-insta">
       <a href="https://www.instagram.com/ludout_proyecto?igsh=MW91ZXgxaGgzNzlmeQ==">
-      <img class="img-perfil" src="Fondos/perfilInsta.png" alt="Perfil Instagram" ></a>
+      <img id=logoInsta class="img-perfil" src="Fondos/logoPerfil.png" alt="Perfil Instagram" onclick="cambiarLogo()"></a>
   </div>
 
   <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 perfil-insta" >
