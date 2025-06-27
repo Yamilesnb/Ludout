@@ -155,10 +155,14 @@ var swiper = new Swiper(".slide-content-ayuda",{
 
 
     
-function scrollToSection(id) {
-  const section = document.getElementById(id);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-    history.replaceState(null, null, ' '); // limpia el hash
-  }
-}
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const id = this.getAttribute('href').substring(1);
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        history.replaceState(null, null, ' ');
+      }
+    });
+  });
