@@ -154,4 +154,11 @@ var swiper = new Swiper(".slide-content-ayuda",{
     }
 
 
-    history.replaceState(null, null, 'https://ludout.vercel.app');
+    
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+    history.replaceState(null, null, ' '); // limpia el hash
+  }
+}
