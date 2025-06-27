@@ -155,14 +155,16 @@ var swiper = new Swiper(".slide-content-ayuda",{
 
 
     
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const id = this.getAttribute('href').substring(1);
-      const section = document.getElementById(id);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-        history.replaceState(null, null, ' ');
-      }
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // evita el comportamiento por defecto
+        const id = this.getAttribute('href').substring(1);
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+          history.replaceState(null, null, location.pathname);
+        }
+      });
     });
   });
