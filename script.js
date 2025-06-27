@@ -152,3 +152,6 @@ var swiper = new Swiper(".slide-content-ayuda",{
       document.getElementById('menu').classList.toggle('active');
       document.getElementById('overlay').classList.toggle('active');
     }
+
+
+    history.replaceState(null, null, 'https://ludout.vercel.app');
