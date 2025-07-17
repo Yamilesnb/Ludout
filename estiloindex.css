@@ -376,7 +376,7 @@ header {
 }
 
 .btn-docu::before{
-    content: 'Ver documetal';
+    content: 'Ver completo';
     color: rgb(255, 255, 255);
     font-size: 15px;
     position: absolute;
